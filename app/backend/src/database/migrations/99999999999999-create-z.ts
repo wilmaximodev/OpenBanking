@@ -3,7 +3,7 @@ import IExample from '../../interfaces/Example';
 
 export default {
   up(queryInterface: QueryInterface) {
-    return queryInterface.createTable<Model<IExample>>('trybe_eval', {
+    return queryInterface.createTable<Model<IExample>>('example_mig', {
       id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -13,6 +13,6 @@ export default {
     });
   },
   down(queryInterface: QueryInterface) {
-    return queryInterface.dropTable('trybe_eval');
+    return queryInterface.dropTable('example_mig');
   },
 };
