@@ -5,7 +5,7 @@ import ClientModel from '../models/ClientModel';
 import IClientModel from '../interfaces/client/IClientModel';
 import IClient from '../interfaces/client/IClient';
 
-export default class UserService {
+export default class ClientService {
   constructor(
     private clientModel: IClientModel = new ClientModel(),
   ) { }
