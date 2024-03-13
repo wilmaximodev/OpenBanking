@@ -1,5 +1,5 @@
 import IClient from './IClient';
 
-export default interface IUserModel {
-    createAccount(client: IClient): Promise<IClient>;
+export default interface IClientModel {
+  createAccount(client: IClient): Promise<IClient>;
 }
