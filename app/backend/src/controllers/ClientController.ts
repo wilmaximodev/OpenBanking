@@ -11,4 +11,9 @@ export default class ClientController {
     const { status, data } = await this.clientService.createAccount(req.body);
     return res.status(mapStatusHTTP(status)).json(data);
   }
+
+  public async editAccount(req: Request, res: Response) {
+    const { status, data } = await this.clientService.editAccount(req.body, +req.params.id);
+    return res.status(mapStatusHTTP(status)).json(data);
+  }
 }
